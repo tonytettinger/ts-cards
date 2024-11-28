@@ -1,4 +1,9 @@
-import { Flex, Button, HStack, Box } from "@chakra-ui/react"
+import { Flex, Button, HStack, Box, IconButton } from "@chakra-ui/react"
+import { TbCards } from "react-icons/tb"
+import { GiCardDiscard } from "react-icons/gi"
+import { IoTrashBinSharp } from "react-icons/io5"
+import { MdOutlineFrontHand } from "react-icons/md"
+import { PiCardsThreeBold } from "react-icons/pi"
 
 export const Card = ({ card: { name, ops, side }, setCardLocation }) => {
   const bgMap = new Map([
@@ -11,38 +16,38 @@ export const Card = ({ card: { name, ops, side }, setCardLocation }) => {
       <Box borderRadius="full" bg={bgMap.get(side)} w="3" h="3" mr="2" />
       {ops} {name}
       <HStack ml="auto">
-        <Button
+        <IconButton
           bg="#003366"
           color="#FFD700"
           size="xs"
           onClick={() => setCardLocation({ name, location: "discard" })}
         >
-          Discard
-        </Button>
-        <Button
+          <GiCardDiscard />
+        </IconButton>
+        <IconButton
           bg="#003366"
           color="#FFD700"
           size="xs"
           onClick={() => setCardLocation({ name, location: "remove" })}
         >
-          Remove
-        </Button>
-        <Button
+          <IoTrashBinSharp />
+        </IconButton>
+        <IconButton
           bg="#003366"
           color="#FFD700"
           size="xs"
           onClick={() => setCardLocation({ name, location: "hand" })}
         >
-          Hand
-        </Button>
-        <Button
+          <MdOutlineFrontHand />
+        </IconButton>
+        <IconButton
           bg="#003366"
           color="#FFD700"
           size="xs"
           onClick={() => setCardLocation({ name, location: "deck" })}
         >
-          Deck
-        </Button>
+          <PiCardsThreeBold />
+        </IconButton>
       </HStack>
     </Flex>
   )
