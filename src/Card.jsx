@@ -13,8 +13,13 @@ export const Card = ({ card: { name, ops, side }, setCardLocation }) => {
   ])
   return (
     <Flex bg="#e3f6ff" alignItems="center" p="2">
-      <Box borderRadius="full" bg={bgMap.get(side)} w="3" h="3" mr="2" />
-      {ops} {name}
+      <Box borderRadius="full" bg={bgMap.get(side)} minWidth="3" h="3" />
+      <Box display="inline" p="2">
+        {ops}
+      </Box>
+      <Box display="inline" overflow="hidden" textOverflow="ellipsis" mr="1">
+        {name}
+      </Box>
       <HStack ml="auto">
         <IconButton
           bg="#003366"
