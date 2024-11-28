@@ -1,0 +1,723 @@
+[
+  {
+    "stage": "early",
+    "name": "Asia Scoring",
+    "ops": 0,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "early",
+    "name": "Europe Scoring",
+    "ops": 0,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "early",
+    "name": "Middle East Scoring",
+    "ops": 0,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "early",
+    "name": "Duck and Cover",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "Five Year Plan",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "Socialist Governments",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Fidel",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Vietnam Revolts",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Blockade",
+    "ops": 1,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Korean War",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Romanian Abdication",
+    "ops": 1,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Arab-Israeli War",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Comecon",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Nasser",
+    "ops": 1,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Warsaw Pact Formed",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "De Gaulle Leads France",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Captured Nazi Scientist",
+    "ops": 1,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "early",
+    "name": "Truman Doctrine",
+    "ops": 1,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "Olympic Games",
+    "ops": 2,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "early",
+    "name": "NATO",
+    "ops": 4,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "Independent Reds",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "Marshall Plan",
+    "ops": 4,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "Indo-Pakistani War",
+    "ops": 2,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "early",
+    "name": "Containment",
+    "ops": 3,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "early",
+    "name": "CIA Created",
+    "ops": 1,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "US/Japan Mutual Defense Pact",
+    "ops": 4,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "Suez Crisis",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "East European Unrest",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "Decolonization",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Red Scare/Purge",
+    "ops": 4,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "early",
+    "name": "UN Intervention",
+    "ops": 1,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "early",
+    "name": "De-Stalinization",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "early",
+    "name": "Nuclear Test Ban",
+    "ops": 4,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "early",
+    "name": "Formosan Resolution",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "early",
+    "name": "Defectors",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Brush War",
+    "ops": 3,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "Central America Scoring",
+    "ops": 0,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "Southeast Asia Scoring",
+    "ops": 0,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "Arms Race",
+    "ops": 3,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "Cuban Missile Crisis",
+    "ops": 3,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "Nuclear Subs",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Quagmire",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "SALT Negotiations",
+    "ops": 3,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "Bear Trap",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Summit",
+    "ops": 1,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "How I Learned to Stop Worrying",
+    "ops": 2,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "Junta",
+    "ops": 2,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "Kitchen Debates",
+    "ops": 1,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Missile Envy",
+    "ops": 2,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "We Will Bury You",
+    "ops": 4,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "Brezhnev Doctrine",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "Portuguese Empire Crumbles",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "South African Unrest",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "Allende",
+    "ops": 1,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "Willy Brandt",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "Muslim Revolution",
+    "ops": 4,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "ABM Treaty",
+    "ops": 4,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "Cultural Revolution",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "Flower Power",
+    "ops": 4,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "U2 Incident",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "OPEC",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "Lone Gunman",
+    "ops": 1,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "Colonial Rear Guards",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Panama Canal Returned",
+    "ops": 1,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Camp David Accords",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Puppet Governments",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Grain Sales to Soviets",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "John Paul II Elected Pope",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Latin American Death Squads",
+    "ops": 2,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "OAS Founded",
+    "ops": 1,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Nixon Plays the China Card",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Sadat Expels Soviets",
+    "ops": 1,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Shuttle Diplomacy",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "The Voice of America",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Liberation Theology",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "mid",
+    "name": "Ussuri River Skirmish",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Ask Not What Your Country...",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Alliance for Progress",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "mid",
+    "name": "Africa Scoring",
+    "ops": 0,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "One Small Step...",
+    "ops": 2,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "mid",
+    "name": "South America Scoring",
+    "ops": 0,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "late",
+    "name": "Iranian Hostage Crisis",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "late",
+    "name": "The Iron Lady",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "late",
+    "name": "Reagan Bombs Libya",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "late",
+    "name": "Star Wars",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "late",
+    "name": "North Sea Oil",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "late",
+    "name": "The Reformer",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "late",
+    "name": "Marine Barracks Bombing",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "late",
+    "name": "Soviets Shoot Down KAL-007",
+    "ops": 4,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "late",
+    "name": "Glasnost",
+    "ops": 4,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "late",
+    "name": "Ortega Elected in Nicaragua",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "late",
+    "name": "Terrorism",
+    "ops": 2,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "late",
+    "name": "Iran-Contra Scandal",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "late",
+    "name": "Chernobyl",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "late",
+    "name": "Latin American Debt Crisis",
+    "ops": 2,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "late",
+    "name": "Tear Down this Wall",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "late",
+    "name": "\"An Evil Empire\"",
+    "ops": 3,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "late",
+    "name": "Aldrich Ames Remix",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "late",
+    "name": "Pershing II Deployed",
+    "ops": 3,
+    "location": "deck",
+    "side": "ussr"
+  },
+  {
+    "stage": "late",
+    "name": "Wargames",
+    "ops": 4,
+    "location": "deck",
+    "side": "n"
+  },
+  {
+    "stage": "late",
+    "name": "Solidarity",
+    "ops": 2,
+    "location": "deck",
+    "side": "us"
+  },
+  {
+    "stage": "late",
+    "name": "Iran-Iraq War",
+    "ops": 2,
+    "location": "deck",
+    "side": "n"
+  },
+  { "stage": "early", "name": "The Cambridge Five", "ops": 2, "side": "ussr" },
+  { "stage": "early", "name": "Special Relationship", "ops": 2, "side": "us" },
+  { "stage": "early", "name": "NORAD", "ops": 3, "side": "us" },
+  { "stage": "early", "name": "Che", "ops": 3, "side": "ussr" },
+  { "stage": "early", "name": "Our Man in Tehran", "ops": 2, "side": "us" },
+  { "stage": "early", "name": "Yuri and Samantha", "ops": 2, "side": "ussr" },
+  { "stage": "early", "name": "AWACS Sale to Saudis", "ops": 3, "side": "us" }
+]
