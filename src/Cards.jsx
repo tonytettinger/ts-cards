@@ -1,46 +1,55 @@
-import cards from "./assets/cards.json"
-import { Card } from "./Card"
-import { useState } from "react"
-import { Stack, Box, Heading, Button } from "@chakra-ui/react"
-
+import cards from "./assets/cards.json";
+import { Card } from "./Card";
+import { useState, useEffect } from "react";
+import { Stack, Box, Heading, Button } from "@chakra-ui/react";
+import { CardCategory } from "./CardCategory";
+import { Tooltip } from "./Tooltip";
 const colorOrder = {
   us: 1,
   ussr: 2,
   n: 3,
-}
+};
 
 export const Cards = () => {
-  const [data, setData] = useState([...cards])
+
+  useEffect(() => {
+    if(localStorage.getItem("cardsData")) {
+      const localStorageData = JSON.parse(localStorage.getItem("cardsData"));
+      setData(localStorageData);
+    }
+  }, []);
+  
+
+  const [data, setData] = useState([...cards]);
   const setCardLocation = ({ name, location }) => {
-    setData((prev) =>
-      prev.map((card) => (card.name === name ? { ...card, location } : card))
-    )
-  }
+    setData((prev) => {
+      const cardLocations = prev.map((card) =>
+        card.name === name ? { ...card, location } : card
+      );
+      localStorage.setItem("cardsData", JSON.stringify(cardLocations));
+      return cardLocations;
+    });
+  };
 
   const sortedCards = data.sort((a, b) => {
     if (a.ops !== b.ops) {
-      return b.ops - a.ops
+      return b.ops - a.ops;
     }
-    return colorOrder[a.side] - colorOrder[b.side]
-  })
+    return colorOrder[a.side] - colorOrder[b.side];
+  });
 
-  const deck = sortedCards.filter((card) => card.location === "deck")
+  const deck = sortedCards.filter((card) => card.location === "deck");
+  const hand = sortedCards.filter((card) => card.location === "hand");
+  const discard = sortedCards.filter((card) => card.location === "discard");
+  const remove = sortedCards.filter((card) => card.location === "remove");
+
   return (
     <Stack>
-      <Heading as="h2" size="xl" p="2" fontWeight="900">
-        Hand
-      </Heading>
-      <Stack>
-        {data
-          .filter((card) => card.location === "hand")
-          .map((card) => (
-            <Card
-              card={card}
-              key={card.name}
-              setCardLocation={setCardLocation}
-            />
-          ))}
-      </Stack>
+      <CardCategory
+        position="Hand"
+        cards={hand}
+        setCardLocation={setCardLocation}
+      />
 
       <Heading as="h2" size="xl" p="2" fontWeight="900">
         Deck
@@ -139,9 +148,14 @@ export const Cards = () => {
             />
           ))}
       </Stack>
-      <Button mt="8" mb="4" onClick={() => setData([...cards])}>
-        Reset
-      </Button>
+      <Tooltip content="Reset to initial state">
+        <Button bg="#003366" color="white" variant="solid" mt="8" mb="4" onClick={() => setData([...cards])}>
+          Reset
+        </Button>
+      </Tooltip>
+      <Button asChild>
+      <a href="https://www.buymeacoffee.com/tonytettinger">Buy me a coffee ☕</a>
+    </Button>
     </Stack>
-  )
-}
+  );
+};
