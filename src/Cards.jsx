@@ -153,9 +153,15 @@ export const Cards = () => {
           Reset
         </Button>
       </Tooltip>
-      <Button asChild>
-      <a href="https://www.buymeacoffee.com/tonytettinger">Buy me a coffee ☕</a>
-    </Button>
+      <Box mt="4" mb="4" textAlign="center">
+        <span>
+          For improvement suggestions, contact me on{" "}
+          <a href="https://www.linkedin.com/in/antal-tettinger/" target="_blank" rel="noopener noreferrer" style={{ color: "#0077b5", fontWeight: "bold" }}>
+            LinkedIn
+          </a>
+          .
+        </span>
+      </Box>
     </Stack>
   );
 };

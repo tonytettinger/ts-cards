@@ -31,7 +31,7 @@ export default function App() {
           <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} />
         )} */}
         <Heading as="h1" size="xl" p="2">
-          Twilight Struggle Cards
+          Twilight Struggle Card Tracker & Counter
         </Heading>
         <Cards />
       </Box>
