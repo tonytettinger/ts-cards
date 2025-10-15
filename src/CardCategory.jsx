@@ -1,33 +1,37 @@
 import { CardStack } from "./CardStack";
-import { Heading, Box } from "@chakra-ui/react";
+import { Heading, Box, Flex } from "@chakra-ui/react";
 
 export const CardCategory = ({ position, cards, setCardLocation }) => {
   const early = cards.filter((card) => card.stage === "early");
   const mid = cards.filter((card) => card.stage === "mid");
   const late = cards.filter((card) => card.stage === "late");
-
+  if (cards.length === 0) return null;
   return (
-    <>
-      <Heading as="h2" size="xl" p="2" fontWeight="900">
+    <Box bg="lightgrey" border="2px solid black" borderRadius="md" p="2" mb="2">
+      <Heading as="h2" size="lg" fontWeight="900">
         {position}
       </Heading>
-      <Box>
+      <Flex flexDirection="column" gap="1">
         <CardStack
           headingText="EARLY WAR"
           cards={early}
           setCardLocation={setCardLocation}
         />
-        <CardStack
-          headingText="MID WAR"
-          cards={mid}
-          setCardLocation={setCardLocation}
-        />
-        <CardStack
-          headingText="LATE WAR"
-          cards={late}
-          setCardLocation={setCardLocation}
-        />
-      </Box>
-    </>
+        {mid.length !== 0 && (
+          <CardStack
+            headingText="MID WAR"
+            cards={mid}
+            setCardLocation={setCardLocation}
+          />
+        )}
+        {late.length !== 0 && (
+          <CardStack
+            headingText="LATE WAR"
+            cards={late}
+            setCardLocation={setCardLocation}
+          />
+        )}
+      </Flex>
+    </Box>
   );
 };

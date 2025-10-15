@@ -11,14 +11,12 @@ const colorOrder = {
 };
 
 export const Cards = () => {
-
   useEffect(() => {
-    if(localStorage.getItem("cardsData")) {
+    if (localStorage.getItem("cardsData")) {
       const localStorageData = JSON.parse(localStorage.getItem("cardsData"));
       setData(localStorageData);
     }
   }, []);
-  
 
   const [data, setData] = useState([...cards]);
   const setCardLocation = ({ name, location }) => {
@@ -40,128 +38,63 @@ export const Cards = () => {
 
   const deck = sortedCards.filter((card) => card.location === "deck");
   const hand = sortedCards.filter((card) => card.location === "hand");
+  const opponent = sortedCards.filter((card) => card.location === "opponent");
   const discard = sortedCards.filter((card) => card.location === "discard");
   const remove = sortedCards.filter((card) => card.location === "remove");
 
   return (
-    <Stack>
+    <>
       <CardCategory
         position="Hand"
         cards={hand}
         setCardLocation={setCardLocation}
       />
-
-      <Heading as="h2" size="xl" p="2" fontWeight="900">
-        Deck
-      </Heading>
-      <Box>
-        <Heading
-          as="h3"
-          size="sm"
-          p="4"
-          bg="#00accf"
-          color="white"
-          fontWeight="900"
-        >
-          EARLY WAR
-        </Heading>
-        <Stack>
-          {deck
-            .filter((card) => card.stage === "early")
-            .map((card) => (
-              <Card
-                card={card}
-                key={card.name}
-                setCardLocation={setCardLocation}
-              />
-            ))}
-        </Stack>
-        <Heading
-          as="h3"
-          size="sm"
-          p="4"
-          bg="#0089ab"
-          color="white"
-          fontWeight="900"
-        >
-          MID WAR
-        </Heading>
-        <Stack>
-          {deck
-            .filter((card) => card.stage === "mid")
-            .map((card) => (
-              <Card
-                card={card}
-                key={card.name}
-                setCardLocation={setCardLocation}
-              />
-            ))}
-        </Stack>
-        <Heading
-          as="h3"
-          size="sm"
-          p="4"
-          bg="#282f42"
-          color="white"
-          fontWeight="900"
-        >
-          LATE WAR
-        </Heading>
-        <Stack>
-          {deck
-            .filter((card) => card.stage === "late")
-            .map((card) => (
-              <Card
-                card={card}
-                key={card.name}
-                setCardLocation={setCardLocation}
-              />
-            ))}
-        </Stack>
-      </Box>
-
-      <Heading as="h2" size="xl" p="2" fontWeight="900">
-        Discard
-      </Heading>
-      <Stack>
-        {data
-          .filter((card) => card.location === "discard")
-          .map((card) => (
-            <Card
-              card={card}
-              key={card.name}
-              setCardLocation={setCardLocation}
-            />
-          ))}
-      </Stack>
-      <Heading as="h2" size="xl" p="2" fontWeight="900">
-        Removed
-      </Heading>
-      <Stack>
-        {data
-          .filter((card) => card.location === "remove")
-          .map((card) => (
-            <Card
-              card={card}
-              key={card.name}
-              setCardLocation={setCardLocation}
-            />
-          ))}
-      </Stack>
+      <CardCategory
+        position="Opponent"
+        cards={opponent}
+        setCardLocation={setCardLocation}
+      />
+      <CardCategory
+        position="Deck"
+        cards={deck}
+        setCardLocation={setCardLocation}
+      />
+      <CardCategory
+        position="Discard"
+        cards={discard}
+        setCardLocation={setCardLocation}
+      />
+      <CardCategory
+        position="Removed"
+        cards={remove}
+        setCardLocation={setCardLocation}
+      />
       <Tooltip content="Reset to initial state">
-        <Button bg="#003366" color="white" variant="solid" mt="8" mb="4" onClick={() => setData([...cards])}>
+        <Button
+          bg="#003366"
+          color="white"
+          variant="solid"
+          mt="8"
+          mb="4"
+          onClick={() => setData([...cards])}
+        >
           Reset
         </Button>
       </Tooltip>
-      <Box mt="4" mb="4" textAlign="center">
+      <Box mt="4" mb="4" textAlign="center" bg="white" p="2">
         <span>
           For improvement suggestions, contact me on{" "}
-          <a href="https://www.linkedin.com/in/antal-tettinger/" target="_blank" rel="noopener noreferrer" style={{ color: "#0077b5", fontWeight: "bold" }}>
+          <a
+            href="https://www.linkedin.com/in/antal-tettinger/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#0077b5", fontWeight: "bold" }}
+          >
             LinkedIn
           </a>
           .
         </span>
       </Box>
-    </Stack>
+    </>
   );
 };

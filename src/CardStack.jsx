@@ -1,16 +1,20 @@
 import { Card } from "./Card";
 import { CardHeading } from "./CardHeading";
-import { Stack } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 export const CardStack = ({ headingText, cards, setCardLocation }) => {
   return (
-    <>
+    <Box bg="white" border="1px solid black" borderRadius="md">
       <CardHeading headingText={headingText} />
-      <Stack>
+      <Box
+        display="grid"
+        gridTemplateColumns="repeat(auto-fill, minmax(250px, 1fr))"
+        gap="1"
+      >
         {cards.map((card) => (
-          <Card card={card} key={card.name} setCardLocation={setCardLocation} />
+          <Card key={card.name} card={card} setCardLocation={setCardLocation} />
         ))}
-      </Stack>
-    </>
+      </Box>
+    </Box>
   );
 };
