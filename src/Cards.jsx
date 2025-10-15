@@ -1,7 +1,6 @@
 import cards from "./assets/cards.json";
-import { Card } from "./Card";
 import { useState, useEffect } from "react";
-import { Stack, Box, Heading, Button } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import { CardCategory } from "./CardCategory";
 import { Tooltip } from "./Tooltip";
 const colorOrder = {

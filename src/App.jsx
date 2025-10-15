@@ -1,10 +1,11 @@
 import { Cards } from "./Cards";
 import { Container, Box, Heading } from "@chakra-ui/react";
+import { CardLegend } from "./CardLegend";
 
 export default function App() {
   return (
     <Container
-      bgImage="url('/twilight-struggle-card-tracker-1200x630.png')" // <-- set your image filename here
+      bgImage="url('/twilight-struggle-card-tracker-1200x630.png')"
       bgSize="contain"
       bgPosition="center"
       minH="100vh"
@@ -20,6 +21,7 @@ export default function App() {
         >
           Twilight Struggle Card Tracker & Counter
         </Heading>
+        <CardLegend />
         <Cards />
       </Box>
     </Container>

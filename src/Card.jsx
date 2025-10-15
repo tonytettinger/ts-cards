@@ -1,10 +1,4 @@
-import { Flex, Button, HStack, Box, IconButton } from "@chakra-ui/react";
-import { TbCards } from "react-icons/tb";
-import { GiCardDiscard } from "react-icons/gi";
-import { IoTrashBinSharp } from "react-icons/io5";
-import { MdOutlineFrontHand } from "react-icons/md";
-import { PiCardsThreeBold } from "react-icons/pi";
-import { Tooltip } from "./Tooltip";
+import { Flex, Box } from "@chakra-ui/react";
 import { CardInteractions } from "./CardInteractions";
 
 export const Card = ({ card: { name, ops, side }, setCardLocation }) => {
