@@ -10,6 +10,7 @@ export const CardStack = ({ headingText, cards, setCardLocation }) => {
         display="grid"
         gridTemplateColumns="repeat(auto-fill, minmax(250px, 1fr))"
         gap="1"
+        p="1"
       >
         {cards.map((card) => (
           <Card key={card.name} card={card} setCardLocation={setCardLocation} />
